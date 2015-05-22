@@ -44,3 +44,4 @@ group :development, :test do
 end
 
 gem 'materialize-sass'
+gem 'devise'
