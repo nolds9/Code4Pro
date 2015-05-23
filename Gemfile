@@ -45,3 +45,4 @@ end
 
 gem 'materialize-sass'
 gem 'devise'
+gem 'toastr-rails'
