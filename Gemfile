@@ -46,3 +46,4 @@ end
 gem 'materialize-sass'
 gem 'devise'
 gem 'toastr-rails'
+gem 'mandrill-api', '1.0.52', require: 'mandrill'
