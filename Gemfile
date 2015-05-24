@@ -51,3 +51,5 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 gem 'omniauth-github'
+
+gem 'activeadmin', github: 'activeadmin'
