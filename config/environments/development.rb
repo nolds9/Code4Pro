@@ -51,4 +51,6 @@ Rails.application.configure do
     authentication: 'login'
   }
   
+  Paperclip.options[:command_path] = "/usr/local/bin/"
+  
 end
