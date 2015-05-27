@@ -1,5 +1,8 @@
 class Task < ActiveRecord::Base
-  belongs_to :project
+	extend FriendlyId
+	friendly_id :title, use: [:slugged, :finders]
+
+  	belongs_to :project
 
 	validates :title, presence: true, length: { maximum: 500}
 	validates :video, presence: true
