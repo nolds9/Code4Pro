@@ -6,7 +6,7 @@
 			</div>
 			<div class="card-action center">
 				<button class="btn waves-effect waves-light pink darken-2">
-					Take Project
+					Take This Project
 				</button>
 			</div>
 		</div>
@@ -22,7 +22,7 @@
 				<hr>
 				<%= @project.content %>
 
-				<div class="collection">
+				<div class="collection" data-no-turbolink>
 					<% @tasks.each do |task| %>
 						<% if task.header %>
 							<div class="collection-item active">
