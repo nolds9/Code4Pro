@@ -23,6 +23,12 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+
+
+gem 'redcarpet', '~> 3.2.3'
+gem 'coderay', '~> 1.1.0'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -55,3 +61,4 @@ gem 'omniauth-github'
 gem 'activeadmin', github: 'activeadmin'
 gem 'active_skin'
 gem "paperclip", "~> 4.2"
+
