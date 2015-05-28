@@ -58,6 +58,13 @@
 					<% end %>
 				</div>
 			</div>
+
+			<div class="card-content">
+				<h4>Reviews</h4>
+				<div><%= render 'reviews/form' if @joined && !@hasReview %></div>
+				<div><%= render 'reviews/index' %></div>
+			</div>
+
 		</div>
 	</div>
 </div>
