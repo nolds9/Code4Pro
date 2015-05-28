@@ -6,7 +6,6 @@ class Task < ActiveRecord::Base
 
 	validates :title, presence: true, length: { maximum: 500}
 	validates :video, presence: true
-	validates :tag, presence: true
 	validates :project, presence: true
 
 
