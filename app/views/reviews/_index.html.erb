@@ -17,7 +17,7 @@
 			<div><%= r.star %></div>
 			<div><%= r.comment %></div>
 			<div>
-				<%= link_to "Remove", [@project, r], method: :delete, data: {confirm: "Are you sure?"} %>
+				<%= link_to "Remove", [@project, r], method: :delete, data: {confirm: "Are you sure?"} if current_user && current_user.id == r.user.id %>
 			</div>
 		</div>
 	</div>	
