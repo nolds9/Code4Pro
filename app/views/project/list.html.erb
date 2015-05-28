@@ -1,7 +1,13 @@
+<center><h5>My Projects</h5>
+</center>
+
 <div class="row">
 <br/>
+	
+	<% if @projects.count > 0 %>
 
-	<% @projects.each do |project| %>
+
+		<% @projects.each do |project| %>
 		<%= link_to project do %>
 			<div class="col s12 m6 l4">
 				<div class="card">
@@ -18,5 +24,13 @@
 				</div>
 			</div>	
 		<% end %>
+		<% end %>
+
+	<% else %>
+		<div class="center">
+			<h6>You are not current in any projects!</h6>
+			<%= link_to "Show me all Projects", root_path, class: "btn btn-primary" %>		
+		</div>
 	<% end %>
+
 </div>

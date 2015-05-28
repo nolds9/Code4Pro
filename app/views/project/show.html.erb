@@ -18,16 +18,16 @@
 					<% end %>
 				</div>
 			<% else %>
-				<div class="center">
-					<%= image_tag avatar_url(current_user), class: "circle responsive-img" %><br/>
+				<div class="card-content center">
+					<%= image_tag avatar_url(current_user), class: "circle responsive-img avatar-medium" %><br/>
 					<h5><%= current_user.name %></h5>	
 				</div>
 				<div class="card-action center">
 					<% @users.each do |u| %>
 					<span class="valign-wrapper">
-						<%= image_tag avatar_url(current_user), class: "circle responsive-img" %>&nbsp;
+						<%= image_tag avatar_url(u), class: "circle responsive-img avatar-small" %>&nbsp;
 						<%= u.name %>
-					</span>
+					</span><br/>
 					<% end %>
 				</div>
 			<% end %>
