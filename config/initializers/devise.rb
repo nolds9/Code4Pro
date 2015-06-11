@@ -32,13 +32,13 @@ Devise.setup do |config|
 
 
   require  'omniauth-google-oauth2'
-  config.omniauth :google_oauth2, '575719217789-km1phd0veo5rgfm2j9pm5re3rgp4lh7f.apps.googleusercontent.com', 'Phjx9DSKpho_--dEQM4WmiLB', {access_type: "offline", approval_prompt: ""}
+  config.omniauth :google_oauth2, ENV['GOOGLE_APP_ID'], ENV['GOOGLE_APP_SECRET'], {access_type: "offline", approval_prompt: ""}
 
   require  'omniauth-facebook'
-  config.omniauth :facebook, '829222653838459', '0718660542ce1cc44e4eede7f395b1a1'
+  config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_APP_SECRET']
 
   require  'omniauth-github'
-  config.omniauth :github, 'f544271690e629cc225c', '0ca6fbe6a981ebce56193b57b89347747faa859c', scope: "user:email"
+  config.omniauth :github, ENV['GITHUB_APP_ID'], ENV['GITHUB_APP_SECRET'], scope: "user:email"
 
 
 end
