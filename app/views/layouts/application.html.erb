@@ -5,6 +5,12 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+	  <div class="container">
+	  	<%= yield :head %>
+	  </div>
+
+	 <script src="//load.sumome.com/" data-sumo-site-id="7b4881fa90b933cd443c0636765e313a635d6dc7085b1c0afd5a643c47fcae44" async="async"></script>
 </head>
 <body>
 
