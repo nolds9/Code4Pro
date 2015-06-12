@@ -71,3 +71,5 @@ gem 'pry'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 gem 'figaro', '~> 1.1.1'
+
+gem 'rails-erd'
